@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# description of code
+
+trap 'echo "I am invincible!!!"; exit 0' SIGTERM
+
+while :
+do
+    echo "To infinity and beyond"
+    sleep 2
+done

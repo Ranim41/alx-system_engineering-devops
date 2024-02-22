@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Find and terminate the 7-highlander process
+
+pkill -SIGTERM -f "7-highlander"

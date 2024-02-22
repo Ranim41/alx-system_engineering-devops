@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+# description of code
+
+# Get the PIDs and process names of processes containing the word "bash"
+pids=$(pgrep -f bash)
+
+# Loop through each PID and display the PID and process name
+for pid in $pids; do
+    # Exclude the script itself from the output
+    if [ $pid -ne $$ ]; then
+        echo "$pid bash"
+    fi
+done
