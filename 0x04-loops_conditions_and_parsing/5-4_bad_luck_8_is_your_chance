@@ -7,7 +7,7 @@ count=1
 while [ $count -lt 10 ]
 do
     if [ $count -eq 3 ]
-    then 
+    then
         echo "bad luck"
         ((count++))
     elif [ $count -eq 7 ]
